@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.bg-container {
+    background-image: url('https://res.cloudinary.com/db81wfhg9/image/upload/v1697864999/img1_d0fghc.jpg');
+    background-size: cover;
+    max-width: 100%;
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-bar-conatainer {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-container {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+    flex: 1;
+}
+
+.list-container a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.list-container li {
+    font-family: "Times New Roman";
+    font-weight: 500;
+    font-size: 21px;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+.icons-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+.phone-icon {
+    width: 25px;
+}
+
+.cart-icon {
+    width: 25px;
+}
+
+.lorem-card {
+    background-color: #ff598e70;
+    height: 250px;
+    width: 600px;
+    margin-left: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 100px;
+}
+
+.lorem-card h1 {
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 51px;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.lorem-card p {
+    color: #f0ebeb;
+    font-family: "Roboto";
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.plain-bar {
+    background-image: linear-gradient(to right, #fc5dc5, #fce658);
+    height: 100px;
+}
+
+.order-page-container {
+    background-image: linear-gradient(to right, #fc5dc5, #fce658);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding: 50px;
+}
+
+.order-page-heading {
+    color: #ffffff;
+    font-family: "Outfit";
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.burger-card {
+    background-color: #ffffff;
+    width: 300px;
+    height: auto;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    padding: 20px;
+}
+
+.pizza-card {
+    background-color: #ffffff;
+    width: 300px;
+    height: auto;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    padding: 20px;
+}
+
+.pasta-card {
+    background-color: #ffffff;
+    width: 300px;
+    height: auto;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    padding: 20px;
+}
+
+.burger-image {
+    height: 260px;
+    width: 100%;
+    border-top-right-radius: 70px;
+}
+
+.pizza-image {
+    height: 260px;
+    width: 100%;
+    border-top-right-radius: 70px;
+}
+
+.pasta-image {
+    height: 260px;
+    width: 100%;
+    border-top-right-radius: 70px;
+}
+
+.burger-card-name {
+    color: #000000;
+    font-family: "Outfit";
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.burger-card-detail {
+    color: #000000;
+    font-family: "Outfit";
+    font-size: 16px;
+    text-align: center;
+}
+
+.order-btn {
+    height: 55px;
+    width: 170px;
+    background-color: #f7bcbc;
+    color: #000000;
+    font-family: "Outfit";
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    border: 0px;
+    border-radius: 50px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+@media (max-width: 479px) {
+    .nav-bar-conatainer {
+        padding: 10px;
+        height: auto;
+    }
+
+    .list-container {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        gap: 10px;
+    }
+
+    .list-container li {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .icons-container {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .lorem-card {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .lorem-card h1 {
+        font-size: 28px;
+    }
+
+    .lorem-card p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .plain-bar {
+        height: 40px;
+    }
+
+    .order-page-heading {
+        font-size: 36px;
+    }
+
+    .burger-card,
+    .pizza-card,
+    .pasta-card {
+        width: 95%;
+        border-radius: 10px;
+    }
+
+    .burger-image,
+    .pizza-image,
+    .pasta-image {
+        height: 150px;
+    }
+
+    .burger-card-name,
+    .burger-card-detail {
+        font-size: 14px;
+    }
+
+    .order-btn {
+        width: 80px;
+        margin-top: 15px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .nav-bar-conatainer {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .list-container {
+        gap: 25px;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .list-container li {
+        font-size: 20px;
+    }
+
+    .icons-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .lorem-card {
+        height: 200px;
+        width: 90%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .lorem-card h1 {
+        font-size: 25px;
+    }
+
+    .lorem-card p {
+        font-size: 16px;
+    }
+
+    .plain-bar {
+        height: 40px;
+    }
+
+    .order-page-container {
+        padding: 20px;
+    }
+
+    .order-page-heading {
+        font-size: 35px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .burger-card,
+    .pizza-card,
+    .pasta-card {
+        width: 350px;
+        border-top-right-radius: 70px;
+    }
+
+    .burger-image,
+    .pizza-image,
+    .pasta-image {
+        height: 250px;
+    }
+
+    .burger-card-name,
+    .burger-card-detail {
+        font-size: 18px;
+    }
+
+    .order-btn {
+        width: 150px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        height: 50px;
+        font-size: 14px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .list-container {
+        text-align: center;
+    }
+
+    .lorem-card {
+        width: 80%;
+    }
+
+    .burger-card,
+    .pizza-card,
+    .pasta-card {
+        width: 80%;
+    }
+
+    .burger-card-name,
+    .burger-card-detail {
+        font-size: 20px;
+    }
+
+    .order-btn {
+        width: 150px;
+        font-size: 18px;
+        margin-top: 30px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .nav-bar-conatainer {
+        padding: 20px 50px;
+    }
+
+    .list-container li {
+        font-size: 24px;
+    }
+
+    .lorem-card {
+        width: 50%;
+    }
+
+    .burger-card,
+    .pizza-card,
+    .pasta-card {
+        width: 300px;
+    }
+
+    .burger-card-name,
+    .burger-card-detail {
+        font-size: 25px;
+    }
+
+    .order-btn {
+        width: 170px;
+        font-size: 20px;
+        margin-top: 50px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .nav-bar-conatainer {
+        padding: 20px 50px;
+    }
+
+    .list-container li {
+        font-size: 26px;
+    }
+
+    .icons-container {
+        margin-right: 20px;
+        margin-left: auto;
+    }
+
+    .lorem-card {
+        width: 60%;
+    }
+
+    .lorem-card h1 {
+        font-size: 60px;
+    }
+
+    .lorem-card p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .plain-bar {
+        height: 120px;
+    }
+
+    .order-page-heading {
+        font-size: 50px;
+    }
+
+    .card-container {
+        gap: 100px;
+    }
+
+    .burger-card, .pizza-card, .pasta-card {
+        width: 330px;
+    }
+
+    .burger-image, .pizza-image, .pasta-image {
+        height: 260px;
+    }
+
+    .burger-card-detail {
+        font-size: 18px;
+    }
+
+    .order-btn {
+        width: 200px;
+        height: 60px;
+        font-size: 24px;
+        margin-top: 50px;
+    }
+}
